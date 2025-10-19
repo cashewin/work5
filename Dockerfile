@@ -2,7 +2,7 @@
 FROM ubuntu:22.04
 
 RUN apt-get update && \
-    apt-get install -y ffmpeg imagemagick jq bc curl && \
+    apt-get install -y ffmpeg imagemagick jq bc curl fonts-noto fonts-noto-cjk fonts-noto-color-emoji fonts-noto-extra && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
